@@ -12,14 +12,17 @@ public class Pilha {
 		dados = new int[tamMax];
 	}
 	
+	//verifica se a pilha está vazia
 	public boolean vazia() {
 		if(tamAtual == 0) return true; else return false;
 	}
 	
+	//verifica se a pilha está cheia
 	public boolean cheia() {
 		if(tamAtual == tamMax) return true; else return false;
 	}
 	
+	//insere o dado apontando no topo da pilha
 	public boolean insereTopo(int dado) {
 		
 		if(cheia()) return false;
@@ -31,6 +34,7 @@ public class Pilha {
 		return true;
 	}
 	
+	//remove o dado do topo da pilha
 	public int removeTopo() {
 		int dado;
 		
@@ -44,12 +48,14 @@ public class Pilha {
 		
 	}
 	
+	//retorna o tamanho atual da pilha
 	public int tamanho() {
 		
 		return tamAtual;
 		
 	}
 	
+	//retorna o valor presente no topo da pilha
 	public int lerTopo() {
 		
 		if(vazia()) return -1;
