@@ -40,7 +40,7 @@ public class Pilha {
 		
 		if(vazia()) return -1;
 		
-		dado = dados[tamAtual];
+		dado = dados[tamAtual-1];
 		
 		tamAtual--;
 		
