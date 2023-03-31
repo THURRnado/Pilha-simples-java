@@ -63,6 +63,7 @@ public class PilhaEncadeada extends No{
 			
 		}
 		
+		//remove o elemento que está no topo da pilha
 		public int removeTopo() {
 			
 			if(vazia()) return -1;
